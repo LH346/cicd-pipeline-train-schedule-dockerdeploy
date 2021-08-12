@@ -8,7 +8,7 @@ pipeline {
             steps {
                 script {
                     echo "test build"
-                 //   app = docker.build("leatherman300/train-schedule")
+                    app = docker.build("leatherman300/train-schedule")
                    // app.inside {
                      //   sh 'echo $(curl localhost:8080)'
                     //}
