@@ -7,10 +7,11 @@ pipeline {
             }
             steps {
                 script {
-                    app = docker.build("leatherman300/train-schedule")
-                    app.inside {
-                        sh 'echo $(curl localhost:8080)'
-                    }
+                    echo "test build"
+                 //   app = docker.build("leatherman300/train-schedule")
+                   // app.inside {
+                     //   sh 'echo $(curl localhost:8080)'
+                    //}
                 }
             }
         }
@@ -20,9 +21,10 @@ pipeline {
             }
             steps {
                 script {
-                    docker.withRegistry('https://registry.hub.docker.com', 'dockerhub_leatherman300') {
-                        app.push("${env.BUILD_NUMBER}")
-                        app.push("latest")
+                    //docker.withRegistry('https://registry.hub.docker.com', 'dockerhub_leatherman300') {
+                      //  app.push("${env.BUILD_NUMBER}")
+                        //app.push("latest")
+                    echo "push"
                     }
                 }
             }
