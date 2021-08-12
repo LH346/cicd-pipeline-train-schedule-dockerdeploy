@@ -1,3 +1,5 @@
+
+  
 plugins {
   //inlude the nodeJS plugin to execute nodejs and npm tasks
   id "com.moowork.node" version "1.2.0"
@@ -33,3 +35,15 @@ zip.dependsOn npm_build
 npm_build.dependsOn npm_test
 npm_test.dependsOn npmInstall
 npm_build.dependsOn npmInstall
+
+
+
+
+
+
+
+
+
+
+
+
