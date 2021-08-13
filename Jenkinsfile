@@ -1,7 +1,7 @@
 pipeline {
     agent any
     environment {
-        stage_ip = 3.83.229.172
+        stage_ip = '3.83.229.172'
         }
     stages {
         stage('Build code into docker image') {
