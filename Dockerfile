@@ -1,7 +1,7 @@
-FROM gradle:5.3-alpine as builder
+FROM node:carbon as builder
 WORKDIR /usr/app
 COPY . /usr/app
-RUN ./gradlew build
+RUN npm install
 
 FROM node:carbon-alpine
 WORKDIR /usr/prod/
