@@ -1,4 +1,4 @@
-FROM gradle:jre8-alpine as builder
+FROM gradle:alpine as builder
 WORKDIR /usr/app
 COPY . /usr/app
 RUN ./gradlew build
